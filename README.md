@@ -1,27 +1,36 @@
-# CRUD de Usuários em Java
+# CRUD de Usuário – Spring Boot
 
-Projeto simples de CRUD (Create, Read, Update, Delete) de usuários desenvolvido em Java com o objetivo de praticar conceitos básicos de programação, organização de código e manipulação de dados.
+Projeto de CRUD de Usuário desenvolvido em Java utilizando Spring Boot, com foco em boas práticas de separação de camadas (Service, Repository e Entity).
+
+A aplicação permite salvar, buscar, atualizar e remover usuários, utilizando Spring Data JPA para persistência dos dados.
 
 ---
 
 ## Descrição
 
-A aplicação permite realizar operações básicas de cadastro e gerenciamento de usuários, incluindo criação, listagem, atualização e exclusão de registros.
+Este projeto implementa um serviço de gerenciamento de usuários, onde é possível realizar operações básicas de CRUD por meio de uma camada de serviço (`UsuarioService`) que encapsula as regras de negócio.
 
-Este projeto foi desenvolvido com foco educacional, sem utilização de frameworks avançados ou banco de dados complexo.
+O acesso aos dados é feito através de um repositório JPA (`UsuarioRepository`), garantindo simplicidade e organização do código.
 
 ---
 
 ## Funcionalidades
 
-- Criar usuário
-- Listar usuários
-- Atualizar usuário
-- Remover usuário
+- Salvar usuário
+- Buscar usuário por ID
+- Buscar usuário por e-mail
+- Atualizar usuário por ID
+- Deletar usuário por ID
+- Deletar usuário por e-mail
 
 ---
 
 ## Tecnologias Utilizadas
 
 - Java
+- Spring Boot
+- Spring Data JPA
+- Maven
 - Programação Orientada a Objetos (POO)
+
+--- Programação Orientada a Objetos (POO)
